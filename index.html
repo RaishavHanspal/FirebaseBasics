@@ -14,7 +14,9 @@
 <body class="mat-typography">
   <app-root></app-root>
 <script src="runtime.a1ab998fcd306a077fb7.js" defer></script><script src="polyfills.35a5ca1855eb057f016a.js" defer></script><script src="main.c5af5811a833a4d14132.js" defer></script> <script>
-      
+      firebase.initializeApp({
+        'messagingSenderId': '336819788827'
+      });
       const messaging = firebase.messaging();
       if ('serviceWorker' in navigator) {
          navigator.serviceWorker.register('firebase-messaging-sw.js')
